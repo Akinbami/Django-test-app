@@ -3,4 +3,6 @@
 {{user}}
 {{request.user}}
 
-<form method='' action=''>{{ form }}</form>
+<form method='' action=''>
+	{{ form }}
+</form>

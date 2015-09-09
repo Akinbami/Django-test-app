@@ -3,7 +3,7 @@ from .models import SignUp
 
 class SignUpForm(forms.ModelForm):
     class Meta:
-        models=SignUp
+        model = SignUp
         fields=['full_name','email','matric_no']
 
 
