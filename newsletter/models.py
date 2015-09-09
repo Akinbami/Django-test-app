@@ -1,0 +1,14 @@
+from django.db import models
+
+# Create your models here.
+
+class SignUp(models.Model):
+    matric_no=models.CharField(max_length=10,null=True,blank=False)
+    email=models.EmailField()
+    full_name=models.CharField(max_length=200,null=True,blank=False)
+    datetime=models.DateTimeField(auto_now_add=True,auto_now=False)
+    update=models.DateTimeField(auto_now_add=False,auto_now=True)
+
+
+    def __unicode__(self):#python3 uses __str__
+        return self.matric_no
